@@ -2,7 +2,7 @@
 ## heroku buildpacks:set heroku/python
 ## heroku buildpacks:remove heroku/python
 
-from flask import Flask, escape, url_for, render_template, request
+from flask import Flask, gunicorn, escape, url_for, render_template, request
 
 app = Flask(__name__)
 
